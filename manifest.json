@@ -1,0 +1,16 @@
+{
+  "name": "SOL Alert Pro",
+  "short_name": "SOL Alert",
+  "start_url": "/sol-alert-pro/",
+  "display": "standalone",
+  "background_color": "#08143c",
+  "theme_color": "#08143c",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/6001/6001527.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
