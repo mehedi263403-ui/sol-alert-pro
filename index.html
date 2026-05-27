@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SOL Alert Pro</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="card">
+
+  <h1 class="title">SOL ALERT</h1>
+
+  <div class="price-box">
+    <div class="price" id="price">$0.00</div>
+    <div class="sub">🟢 LIVE BYBIT PRICE</div>
+  </div>
+
+  <input
+    type="number"
+    id="target"
+    class="input"
+    placeholder="Enter Target Price"
+  />
+
+  <div class="mode-area">
+    <button class="mode-btn up-btn" onclick="setMode('up')">
+      UP ALERT
+    </button>
+
+    <button class="mode-btn down-btn" onclick="setMode('down')">
+      DOWN ALERT
+    </button>
+  </div>
+
+  <div class="telegram-toggle">
+    <input type="checkbox" id="telegram">
+    Telegram Alert
+  </div>
+
+  <button class="start-btn" onclick="startAlert()">
+    START ALERT
+  </button>
+
+  <button class="stop-btn" onclick="stopAlert()">
+    STOP ALERT
+  </button>
+
+  <div class="status" id="status">
+    Waiting...
+  </div>
+
+</div>
+
+<div class="alert-popup" id="popup">
+
+  <div class="alert-content">
+
+    <div class="alert-title">
+      TARGET HIT!
+    </div>
+
+    <div class="alert-price" id="popupPrice">
+      $0
+    </div>
+
+    <button class="close-btn" onclick="closePopup()">
+      CLOSE
+    </button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
