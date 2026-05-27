@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#020d2e;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    color:white;
+}
+
+.card{
+    width:100%;
+    max-width:420px;
+    background:#111c3d;
+    padding:30px;
+    border-radius:30px;
+    box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+.title{
+    text-align:center;
+    font-size:55px;
+    font-weight:bold;
+    color:#2fc3ff;
+    margin-bottom:25px;
+}
+
+.price-box{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.price{
+    font-size:75px;
+    font-weight:bold;
+    color:#ff4d4d;
+}
+
+.sub{
+    color:#aab3d1;
+    font-size:20px;
+    margin-top:10px;
+}
+
+.input{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:20px;
+    background:#24304f;
+    color:white;
+    font-size:22px;
+    margin-top:20px;
+    margin-bottom:20px;
+    outline:none;
+}
+
+.input::placeholder{
+    color:#9aa3c3;
+}
+
+.mode-area{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.mode-btn{
+    flex:1;
+    padding:18px;
+    border:none;
+    border-radius:18px;
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.up-btn{
+    background:#19b84a;
+}
+
+.down-btn{
+    background:#e62323;
+}
+
+.telegram-toggle{
+    font-size:22px;
+    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.telegram-toggle input{
+    transform:scale(1.5);
+}
+
+.start-btn{
+    width:100%;
+    padding:20px;
+    border:none;
+    border-radius:20px;
+    background:#2fc3ff;
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.stop-btn{
+    width:100%;
+    padding:20px;
+    border:none;
+    border-radius:20px;
+    background:#f0a500;
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.status{
+    text-align:center;
+    font-size:28px;
+    color:#c3cbe3;
+}
+
+.alert-popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.8);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+.alert-content{
+    background:#111c3d;
+    width:90%;
+    max-width:350px;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+}
+
+.alert-title{
+    font-size:42px;
+    font-weight:bold;
+    color:#27ff90;
+    margin-bottom:20px;
+}
+
+.alert-price{
+    font-size:55px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.close-btn{
+    padding:16px 30px;
+    border:none;
+    border-radius:15px;
+    background:red;
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
