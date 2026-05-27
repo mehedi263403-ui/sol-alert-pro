@@ -162,3 +162,4 @@ console.log(error);
 setInterval(getPrice, 2000);
 
 getPrice();
+
